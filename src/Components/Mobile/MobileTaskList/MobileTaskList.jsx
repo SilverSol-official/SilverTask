@@ -38,7 +38,7 @@ const MobileTaskList = () => {
 
   return (
     <div className="TaskListM">
-      <>User: {user}</>
+      {/* <>User: {user}</> */}
       <CreateTaskButton />
       <Typography variant="h6" sx={{ margin: '10px auto' }}>Main list <Switch color="default" checked={archived} onChange={(e) => setArchived(e.target.checked)} /> Archive</Typography>
       <SortDropDown changeSortMethod={setSort} />

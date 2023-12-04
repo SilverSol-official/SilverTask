@@ -14,7 +14,8 @@ const AuthProvider = () => {
     useEffect(() => {
         const unsub = auth.onAuthStateChanged((maybeUser) => {
             if (maybeUser != null) {
-                dispatch(setName({ name: maybeUser.displayName }))
+                console.log(maybeUser);
+                dispatch(setName({ name: maybeUser.email }))
                 // console.log('from auth', maybeUser)
                 return setUser(maybeUser);
             }
