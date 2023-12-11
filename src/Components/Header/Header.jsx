@@ -10,14 +10,7 @@ const Header = () => {
   } else {
     task = tasks.archive.find(item => item.id === tasks.currentId);
   }
-  const checkTitle = () => {
-    if (task === undefined) {
-      return ('')
-    } else {
-      console.log(task.title)
-      return (task.title)
-    }
-  }
+
 
 
   return (
