@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import SortDropDown from "../SordDropDown/SortDropDown";
 import Switch from '@mui/material/Switch';
 import { Box, Button, Typography } from "@mui/material";
-import { googleAuthProvider } from "../../rdx/Firebase/firebase";
-import LogoutButton from "./LogOutButton";
+
+
 
 
 const TaskList = () => {
@@ -54,7 +54,7 @@ const TaskList = () => {
         <Typography variant="h6" sx={{ margin: '10px auto' }}>Main list <Switch color="default" checked={archived} onChange={(e) => setArchived(e.target.checked)} /> Archive</Typography>
         <SortDropDown changeSortMethod={setSort} />
         {render()}
-        {/* <LogoutButton /> */}
+
       </div>
 
     </div>

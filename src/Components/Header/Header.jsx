@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const tasks = useSelector((state) => state.tasks);
-  const archive = useSelector((state) => state.tasks);
   let task;
   if (tasks.tasks.find(item => item.id === tasks.currentId)) {
     task = tasks.tasks.find(item => item.id === tasks.currentId);
